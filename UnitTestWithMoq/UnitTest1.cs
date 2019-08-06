@@ -18,6 +18,7 @@ namespace UnitTestWithMoq
     public class UnitTest1 
     {
         //Dummy data to mock table People
+        //so we don't modify actual table at the SQL Server
         IQueryable<Person> data = new List<Person>
         {
             new Person { PersonID = 1, Name = "John"},
